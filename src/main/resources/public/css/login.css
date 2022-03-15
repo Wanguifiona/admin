@@ -1,0 +1,72 @@
+#side ul li a{
+    color: #ffff;
+    font-size: 24px;
+}
+/* side menu color settings */
+#side {
+    /* width: 200px;
+    height: 100vh; */
+    background-color: #006Bf7;
+
+}
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover{
+    background-color: #338BFF;
+}
+h5{
+    color: #006BF7;
+}
+.me-2{
+    border-radius: 1000px;
+}
+#getstarted{
+    background-color: #006Bf7;
+    height: 100vh;
+}
+.rectangle{
+    width: 301px;
+    height: 190px;
+    background-image:url("../images/frame.png") ;
+
+
+}
+.rectangle h3,h2{
+    text-align: center;
+
+}
+#one{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+#two{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+#three{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}#four{
+     margin-top: 5px;
+     margin-bottom: 5px;
+     width: 100%;
+     margin-left: 0px;
+ }
+.center {
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.intro {
+    text-align: center;
+    color: #FFFFFF;
+}
+.sign {text-align: left}

@@ -27,5 +27,20 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "bookings.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return  new ModelAndView(model, "login.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/logout", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "logout.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/delete", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return  new ModelAndView(model,"delete.hbs");
+        }, new HandlebarsTemplateEngine());
       }
     }
