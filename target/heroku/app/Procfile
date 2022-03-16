@@ -1,0 +1,1 @@
+web: java -jar target/moversapi.0-jar-with-dependencies.jar
