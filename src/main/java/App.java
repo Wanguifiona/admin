@@ -1,7 +1,15 @@
+import dao.Sql2oBookingDao;
+import dao.Sql2oInvoiceDao;
+import dao.Sql2oUserDao;
+import models.Booking;
+import models.Invoice;
+import models.User;
+import org.sql2o.Sql2o;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.*;
@@ -21,21 +29,38 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
-//        String connectionString = "jdbc:postgresql://ec2-18-211-78-125.compute-1.amazonaws.com:5432/d7phgv25en5e7l"; //!
-//        Sql2o sql2o = new Sql2o(connectionString, "zvjgsdgtarmgty", "8f4fbdc750ddbed5ed77f73fb0676a3da79bc1eb2f2079284f534f3667839a83");
+        String connectionString = "jdbc:postgresql://localhost:5432/user_global";
+        Sql2o sql2o = new Sql2o(connectionString, "adamu", "Adamu");
+
+        Sql2oUserDao sql2oUserDao = new Sql2oUserDao(sql2o);
+        Sql2oBookingDao sql2oBookingDao = new Sql2oBookingDao(sql2o);
+        Sql2oInvoiceDao sql2oInvoiceDao = new Sql2oInvoiceDao(sql2o);
+
 
         get("/dashboard", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
+            List<User> userList = sql2oUserDao.getAll();
+            List<Invoice> invoiceList = sql2oInvoiceDao.findAll();
+
+            model.put("new", userList);
+            model.put("total", userList.size());
+            model.put("orders", invoiceList.size());
+
             return new ModelAndView(model, "dashboard.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/users", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
+            List<User> userList = sql2oUserDao.getAll();
+            model.put("users", userList);
             return new ModelAndView(model, "users.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/bookings", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
+            List<Invoice> invoiceList = sql2oInvoiceDao.findAll();
+
+            Map<String, List<Invoice> > model = new HashMap<String, List<Invoice>>();
+            model.put("All", invoiceList);
             return new ModelAndView(model, "bookings.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -45,27 +70,23 @@ public class App {
             return  new ModelAndView(model, "login.hbs");
         }, new HandlebarsTemplateEngine());
 
-        //login-form
-//        post("/create/login/new", (request, response) -> {
-//            Map<String,Object> model = new HashMap<String, Object>();
+//        //login-form
+//        post("/login/new", (request, response) -> {
+//            Map<String,Object> model = new HashMap<>();
 //            String name = request.queryParams("name");
 //            String email = request.queryParams("email");
-//            AdminUser users = new AdminUser(name,email);
-//            SqlDaoLogin.save(); //save to db admin info
-//            return new ModelAndView(model,"login-form.hbs");
+//            String password = request.queryParams("password");
+//
+//            User newUser = new User(name, email,password);
+//            Sql2oUserDao.save(newUser);
+//            response.redirect("/users");
+//            return null;
 //        }, new HandlebarsTemplateEngine());
 
-        //login-view
-
-//        get("/view/login",(request, response) -> {
-//            Map<String,Object> model=new HashMap<String, Object>();
-//            model.put("login",Login.all());
-//            return new ModelAndView(model,"login-view.hbs");
-//        },new HandlebarsTemplateEngine());
 
         get("/logout", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            return new ModelAndView(model, "logout.hbs");
+            return new ModelAndView(model, "login.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/delete", (request, response) -> {
