@@ -1,0 +1,53 @@
+{{#partial "styles"}}
+
+    <link rel='stylesheet' href='/css/login.css'>
+
+{{/partial}}
+
+{{#partial "content"}}
+
+    <link rel='stylesheet' href='/css/login.css'>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Admin Panel</h4>
+                <br>
+
+                <img src='/images/lorry.png' alt='A photo of a lorry'/>
+                <br>
+                <h6 class="sign">Sign in</h6>
+                <br>
+
+                <div class="input-group flex-nowrap">
+                    <input type="email" class="form-control" placeholder="Username@gmail.com" aria-label="Username" aria-describedby="addon-wrapping" radius="10px">
+                </div>
+                <br>
+                <br>
+
+                <div class="input-group flex-nowrap">
+                    <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="addon-wrapping">
+                </div>
+
+                <br>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Login</button>
+                </div>
+
+            </div>
+            <div class="col-md-6" id="getstarted">
+
+                <img src="/images/heavy_box.png" class="center">
+
+                <div class="intro"> <h1>Let's get started</h1>
+                    <h4 intros>Easy way to manage all your relocating hustles <br>
+                        at the comfort of your house by tapping on your <br>
+                        phone</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

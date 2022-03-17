@@ -1,0 +1,140 @@
+#side ul li a{
+    color: #ffff;
+    font-size: 24px;
+}
+/* side menu color settings */
+#side {
+    /* width: 200px; */
+    height: 115vh;
+    background-color: #006Bf7;
+    /* Align: (mixed);
+    Width: 250px; */
+
+}
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover{
+    background-color: #338BFF;
+}
+h5{
+    color: #006BF7;
+}
+h6{
+    position:relative;
+    margin-left: -250px;
+}
+P{
+    color: purple;
+}
+p4{
+    color: blue;
+}
+h9{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40.1012px;
+    line-height: 47px;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+h6{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    opacity: 0.6;
+    text-align: left;
+}
+.me-2{
+border-radius: 1000px;
+}
+#getstarted{
+    background-color: #006Bf7;
+    height: 100vh;
+}
+.rectangle{
+    width: 301px;
+    height: 190px;
+    background-image:url("../images/Frame\ 1\ \(1\).png") ;
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+
+
+}
+.rectangle h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29.3449px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+.rectangle h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75.7528px;
+    line-height: 89px;
+    color: #FFFFFF;
+    text-align: center;
+}
+#one{
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+#two{
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+#three{
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+#four{
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+#five{
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0px;
+}
+hr.new1 {
+  border: 2px solid black;
+  width:250px;
+  Height: 0px;
+  }
+#arrow{
+  position: relative;
+  margin-left: 210px;
+
+}

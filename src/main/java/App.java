@@ -1,9 +1,6 @@
-
-
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +20,9 @@ public class App {
 
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
+
+//        String connectionString = "jdbc:postgresql://ec2-18-211-78-125.compute-1.amazonaws.com:5432/d7phgv25en5e7l"; //!
+//        Sql2o sql2o = new Sql2o(connectionString, "zvjgsdgtarmgty", "8f4fbdc750ddbed5ed77f73fb0676a3da79bc1eb2f2079284f534f3667839a83");
 
         get("/dashboard", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
