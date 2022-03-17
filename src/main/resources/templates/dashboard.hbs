@@ -26,12 +26,12 @@
                 <!-- Top Navigation  -->
                 <div class="row-2">
                     <nav class="navbar">
+
                         <div class="container-fluid">
-                            <div class="col-md-4">
-                                <img src="images/prof.png" alt="profile pic" id="profile">
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-lg-4">
-                                <h6 style = "position:relative;">Vikins Treo</h6>
+                            <div class="profole">
+                            <img src="images/prof.png" alt="profile pic" id="profile">
+
+                            <h6 style = "position:relative;">Vikins Treo</h6>
                             </div>
                             <div class="col-md-4 col-sm-4 col-lg-4">
                                 <form class="d-flex">
@@ -44,26 +44,26 @@
                 </div>
                 <!-- Working area -->
                 <div class="row-10">
-                    <div class="row">
+                    <div  class="frames">
                         <div class="col-md-4">
-                            <div class="rectangle">
+                            <div class="rectangle frameone" >
                                 <br>
                                 <h3 style="color: aliceblue;">User</h3>
-                                <h2>20</h2>
+                                <h2>{{total}}</h2>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="rectangle">
+                            <div class="rectangle frametwo">
                                 <br>
                                 <h3 style="color: aliceblue;">Orders</h3>
-                                <h2>200</h2>
+                                <h2>{{orders}}</h2>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="rectangle">
+                            <div class="rectangle framethree">
                                 <br>
                                 <h3 style="color: aliceblue;">Income</h3>
-                                <h2>20000</h2>
+                                <h2>N/A</h2>
                             </div>
                         </div>
                     </div>
@@ -75,91 +75,24 @@
                 <h9>New users</h9>
                 <br>
                 <ul class="list-group">
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="one">
+
+                    {{#if new}}
+                        {{#each new}}
                             <div class="row">
                                 <div class="col-md-4">
                                     <img src="images/Ellipse 5.png" alt="profile pic">
                                 </div>
                                 <div class="col-md-4">
-                                    <h3>Name:Joe</h3>
-                                    <h3>Email:joejoe@gmail.com</h3>
+                                    <h3>Name:{{name}}</h3>
+                                    <h3>Email:{{email}}</h3>
                                 </div>
                                 <div class="col-md-4">
                                     <img src="images/arrow-right-circle.png" alt="arrow pic" id="arrow">
                                 </div>
                             </div>
 
-                        </li>
-                    </div>
-                    <div class="row" id="two">
-                        <li class="list-group-item" id="two">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic" >
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Sarah</h3>
-                                    <h3>Email:sarahsarah@gmail.com</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="images/arrow-right-circle.png" alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="three">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Mark</h3>
-                                    <h3>Email:markmark@gmail.com</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="images/arrow-right-circle.png" alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="four">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Olivia</h3>
-                                    <h3>Email:oliviaolivia@gmail.com</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="images/arrow-right-circle.png" alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="five">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Taylor</h3>
-                                    <h3>Email:taylortaylor@gmail.com</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="images/arrow-right-circle.png" alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
+                        {{/each}}
+                    {{/if}}
 
 
                 </ul>

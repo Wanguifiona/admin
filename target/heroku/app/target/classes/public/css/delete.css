@@ -16,6 +16,16 @@
     alignment: left;
 
 }
+.row {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    /* MAIN_SHADOW */
+
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+}
 .margin-10 {
     margin: 10px;
 }

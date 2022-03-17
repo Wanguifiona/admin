@@ -3,6 +3,16 @@
     margin: auto;
     padding: 5px;
 }
+.row {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    /* MAIN_SHADOW */
+
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+}
 .header {
     display: flex;
 }

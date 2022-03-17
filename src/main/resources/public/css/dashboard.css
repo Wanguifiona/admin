@@ -11,6 +11,21 @@
     Width: 250px; */
 
 }
+.frames {
+    display: flex;
+}
+.frameone {
+    background-image: url("../images/Frame 1.png");
+}
+.frametwo {
+    background-image: url("../images/Frame 2.png");
+}
+.framethree {
+    background-image: url("../images/Frame 3.png");
+}
+.profole {
+    display: flex;
+}
 .nav-link:active,
 .nav-link:focus,
 .nav-link:hover{
@@ -55,15 +70,7 @@ border-radius: 1000px;
     background-color: #006Bf7;
     height: 100vh;
 }
-.rectangle{
-    width: 301px;
-    height: 190px;
-    background-image:url("../images/Frame\ 1\ \(1\).png") ;
-    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
-    border-radius: 8px;
 
-
-}
 .rectangle h3{
     font-family: 'Roboto';
     font-style: normal;
@@ -83,51 +90,6 @@ border-radius: 1000px;
     color: #FFFFFF;
     text-align: center;
 }
-#one{
-    background: #FFFFFF;
-    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
-    border-radius: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    margin-left: 0px;
-}
-#two{
-    background: #FFFFFF;
-    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
-    border-radius: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    margin-left: 0px;
-}
-#three{
-    background: #FFFFFF;
-    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
-    border-radius: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    margin-left: 0px;
-}
-#four{
-    background: #FFFFFF;
-    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
-    border-radius: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    margin-left: 0px;
-}
-#five{
-    background: #FFFFFF;
-    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
-    border-radius: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    margin-left: 0px;
-}
 hr.new1 {
   border: 2px solid black;
   width:250px;
@@ -137,4 +99,23 @@ hr.new1 {
   position: relative;
   margin-left: 210px;
 
+}
+.row {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    /* MAIN_SHADOW */
+
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+}
+.rectangle {
+    background-size: cover;
+    margin: 8px;
+    box-shadow: 0px 16px 32px rgba(4, 84, 189, 0.25);
+    border-radius: 8px;
+    width: 100%;
+    height: 190px;
+    background:no-repeat;
 }

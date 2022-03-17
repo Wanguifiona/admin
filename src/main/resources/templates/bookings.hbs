@@ -43,132 +43,26 @@
             <div class="row-10">
                 <br>
                 <ul class="list-group">
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="one">
-                            <div class="row">
+
+    {{#if All}}
+        {{#each All}}
+                   <div class="row">
                                 <div class="col-md-4">
                                     <img src="images/Ellipse 5.png" alt="profile pic">
                                 </div>
                                 <div class="col-md-4">
-                                    <h3>Name:Joe</h3>
-                                    <h3>Amount:<p4>20,000KES</p4></h3>
+                                    <h3>Name: {{name}}</h3>
+                                    <h3>Amount:<p4>{{price}}</p4></h3>
                                 </div>
                                 <div class="col-md-4">
                                     <p>Paid</p>
                                     <img src="images/arrow-circle .png"  alt="arrow pic" id="arrow">
                                 </div>
-                            </div>
+                   </div>
+        {{/each}}
+        {{/if}}
 
-                        </li>
-                    </div>
-                    <div class="row" id="two">
-                        <li class="list-group-item" id="two">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Sarah</h3>
-                                    <h3>Amount:<p4>20,000KES</p4></h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>Paid</p>
-                                    <img src="images/arrow-circle .png"  alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
 
-                        </li>
-                    </div>
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="three">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Mark</h3>
-                                    <h3>Amount:<p4>40,000KES</p4></h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>Pending</p>
-                                    <img src="images/arrow-circle .png"  alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="four">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Olivia</h3>
-                                    <h3>Amount:<p4>20,000KES</p4></h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>Paid</p>
-                                    <img src="images/arrow-circle .png"  alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
-                    <div class="row" id="one">
-                        <li class="list-group-item" id="five">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Taylor</h3>
-                                    <h3>Amount:<p4>20,000KES</p4></h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>Cancelled</p>
-                                    <img src="images/arrow-circle .png"  alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
-                    <div class="row" id="two">
-                        <li class="list-group-item" id="two">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Dean</h3>
-                                    <h3>Amount:<p4>20,000KES</p4></h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>Paid</p>
-                                    <img src="images/arrow-circle .png"  alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
-                    <div class="row" id="two">
-                        <li class="list-group-item" id="two">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="images/Ellipse 5.png" alt="profile pic">
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Name:Sofi</h3>
-                                    <h3>Amount:<p4>20,000KES</p4></h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>Paid</p>
-                                    <img src="images/arrow-circle .png"  alt="arrow pic" id="arrow">
-                                </div>
-                            </div>
-
-                        </li>
-                    </div>
 
 
                 </ul>

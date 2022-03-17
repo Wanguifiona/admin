@@ -29,8 +29,11 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
-        String connectionString = "jdbc:postgresql://localhost:5432/user_global";
-        Sql2o sql2o = new Sql2o(connectionString, "adamu", "Adamu");
+        String connectionString = "jdbc:postgresql://ec2-54-85-113-73.compute-1.amazonaws.com:5432/d1ngi3fj0iumcd";
+        Sql2o sql2o = new Sql2o(connectionString, "lkyizybqkygkvk", "81e47c09943f1d05aabf6e71a744af70e738472850013f97193555842d8aaaa9");
+
+//        String connectionString = "jdbc:postgresql://localhost:5432/user_global";
+//        Sql2o sql2o = new Sql2o(connectionString, "adamu", "Adamu");
 
         Sql2oUserDao sql2oUserDao = new Sql2oUserDao(sql2o);
         Sql2oBookingDao sql2oBookingDao = new Sql2oBookingDao(sql2o);
